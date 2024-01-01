@@ -1,0 +1,36 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("http://christmasstockimages.com/free/new_year/firework_rocket_bursts.jpg");
+    background-size: cover;
+    color: gold;
+}
+
+.heading {
+    font-size: 9vw; /* Responsive font size based on viewport width */
+    animation: beat 2s linear infinite;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+     
+    .heading {
+        font-size: 80px;
+    }
+
+}
+
+@keyframes beat {
+    0% { transform: scale(0.75); opacity: 0.7; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.75); opacity: 0.7; }
+}
